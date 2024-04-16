@@ -100,13 +100,33 @@ header {
     color: var(--color-primary);
 }
 
+.menu {
+    display: none;
+}
+
+.menu_open {
+    display: flex;
+    flex-direction: column;
+    inline-size: 40px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: var(--transition);
+    display: none;
+}
+
+#menuClose {
+    position: absolute;
+    inset-inline-end: 1rem;
+    inset-block-start: 2rem;
+    cursor: pointer;
+}
+
 /* *********** HERO SECTION *********** */
 .hero_container {
     padding-block-start: 3rem;
     display: grid;
     grid-template-columns: 67% auto;
     gap: 2rem;
-    /* background: red; */
 }
 
 .hero_left .img_container img {
@@ -183,7 +203,6 @@ article:nth-child(4)::after {
 .popular_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* gap: 1rem; */
     margin-block-start: 5rem;
     /* background: red; */
 }
@@ -226,8 +245,109 @@ article:nth-child(4)::after {
 
 
 /* ============= MEDIUM DEVICES ============= */
-@media screen and (max-width: 1440px) {
-    body {
-        background: red;
+@media screen and (max-width: 1300px) {
+    .container {
+        inline-size: 90%;
+    }
+
+    .hero_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero_text {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .hero_text>h1 {
+        font-size: 3rem;
+    }
+
+    .hero_desc p {
+        font-size: 1.1rem;
+    }
+
+    .popular_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .attribution {
+        font-size: 14px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        inline-size: 96%;
+    }
+
+    header {
+        padding-block-start: 1rem;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    .menu_open {
+        display: inline-block;
+        margin-block-start: 1rem;
+    }
+
+    #menuClose {
+        display: none;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-items.openMenu {
+        display: inline-block;
+        position: absolute;
+        inset-inline-end: 0;
+        flex-direction: column;
+        background: var(--color-white);
+        block-size: 100vh;
+        padding: 10rem 8rem 0 1rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        display: flex;
+        color: #000;
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+    }
+
+    .hero_container {
+        grid-template-columns: 1fr;
+        margin-block-start: -1rem;
+    }
+
+    .hero_text {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_text>h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero_desc p {
+        font-size: 1.2rem;
+    }
+
+    .popular_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .popular_text a {
+        font-size: 1rem;
+    }
+
+    .popular_text p {
+        font-size: 1rem;
     }
 }
