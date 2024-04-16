@@ -8,16 +8,16 @@
 }
 
 :root {
-    --color-primary: hsl(5, 85%, 63%);
+    --color-primary: hsl(5, 96%, 65%);
     --color-primary-variant: hsl(35, 77%, 62%);
     --color-secondary: hsl(236, 13%, 42%);
     --color-secondary: hsl(233, 8%, 79%);
     --color-white: hsl(36, 100%, 99%);
     --color-neutral: hsl(240, 100%, 5%);
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-lg: 90%;
+    /* --container-width-lg: 86%;
+    --container-width-md: 90%;
+    --container-width-lg: 94%; */
 
     --transition: all 400ms;
 }
@@ -36,14 +36,16 @@ p {
 }
 
 a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-neutral);
 }
 
-/* a:hover {} */
+a:hover {
+    color: var(--color-primary);
+}
 
 .container {
     margin: 0 auto;
-    inline-size: var(--container-width-lg);
+    inline-size: 86%;
 }
 
 .btn {
@@ -51,16 +53,17 @@ a {
     inline-size: max-content;
     background-origin: none;
     padding-block: .87rem;
-    padding-inline: 1.3rem;
+    padding-inline: 1.8rem;
     cursor: pointer;
     transition: var(--transition);
     color: var(--color-white);
     letter-spacing: 2px;
     font-weight: 400;
+    border: none;
 }
 
 .btn:hover {
-    color: var(--color-neutral);
+    background: var(--color-neutral);
 }
 
 /* *********** HEADER *********** */
@@ -85,7 +88,6 @@ header {
 .nav-items {
     display: flex;
     gap: 3rem;
-    margin-inline-end: 10rem;
     text-align: center;
     padding-block-start: 3rem;
     color: hsl(228, 45%, 44%);
@@ -97,15 +99,92 @@ header {
     color: var(--color-primary);
 }
 
-/* .nav-items {} */
+/* *********** HERO SECTION *********** */
+.hero_container {
+    padding-block-start: 3rem;
+    display: grid;
+    grid-template-columns: 67% auto;
+    gap: 2rem;
+    /* background: red; */
+}
+
+.hero_left .img_container img {
+    max-inline-size: 100%;
+    object-fit: cover;
+}
+
+.hero_text {
+    margin-block-start: 2rem;
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.hero_text>h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    max-inline-size: 400px;
+}
+
+.hero_desc p {
+    line-height: 1.5;
+    color: rgb(153, 148, 148);
+    font-size: 1.8rem;
+}
+
+.hero_desc button {
+    margin-block-start: 2rem;
+}
+
+.hero_right {
+    background: var(--color-neutral);
+    padding: 4rem 1.5rem;
+    color: var(--color-white);
+    line-height: 2rem;
+}
+
+.hero_right>h2 {
+    font-size: 2rem;
+    color: var(--color-primary-variant);
+    margin-block-end: 1.6rem;
+}
+
+article {
+    margin-block-end: 1.6rem;
+}
+
+article:nth-child(3) {
+    margin-block-start: 5rem;
+}
+
+article::after {
+    content: "";
+    inline-size: 100%;
+    block-size: 2px;
+    background-color: var(--color-white);
+    margin-block: 1rem;
+    display: block;
+}
+
+article h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+article:nth-child(2)::after {
+    margin-block-start: 2rem;
+    background-color: rgba(85, 115, 234, 0.293);
+}
+
+article:nth-child(4)::after {
+    display: none;
+}
+
+/* *********** POPULAR *********** */
 
 /* *********** FOOTER *********** */
 .attribution {
     font-size: 16px;
     text-align: center;
-    position: absolute;
-    inset-block-end: 0;
-    inset-inline-start: 50%;
 }
 
 .attribution a {
