@@ -144,7 +144,6 @@ header {
 .hero_text>h1 {
     font-size: 4.5rem;
     font-weight: 800;
-    /* max-inline-size: 400px; */
 }
 
 .hero_desc p {
