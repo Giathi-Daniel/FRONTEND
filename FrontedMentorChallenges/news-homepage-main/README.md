@@ -37,4 +37,4 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Giathi-Daniel](https://www.frontendmentor.io/profile/@Giathi-Daniel)
