@@ -17,8 +17,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ![DesktopView](./design/desktop-design.PNG)
 ![MobileDesign](./design/mobile-design.PNG)
-![MobileMenu](./design/mobile-menu.PNG)
 ![ActiveStates](./design/active-states.jpg)
+![MobileMenu](./design/mobile-menu.PNG)
 
 ### Links
 
@@ -37,5 +37,4 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Author
 
-- Website - [Blackshark](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
