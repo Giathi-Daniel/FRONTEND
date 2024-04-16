@@ -93,7 +93,7 @@ header {
     padding-block-start: 3rem;
     color: hsl(228, 45%, 44%);
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     transition: var(--transition);
 }
 
@@ -142,7 +142,7 @@ header {
 }
 
 .hero_text>h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 800;
 }
 
