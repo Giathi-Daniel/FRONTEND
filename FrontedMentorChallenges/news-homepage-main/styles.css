@@ -93,6 +93,7 @@ header {
     padding-block-start: 3rem;
     color: hsl(228, 45%, 44%);
     cursor: pointer;
+    font-size: 1.6rem;
     transition: var(--transition);
 }
 
@@ -141,9 +142,9 @@ header {
 }
 
 .hero_text>h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 800;
-    max-inline-size: 400px;
+    /* max-inline-size: 400px; */
 }
 
 .hero_desc p {
@@ -235,8 +236,9 @@ article:nth-child(4)::after {
 
 /* *********** FOOTER *********** */
 .attribution {
-    font-size: 16px;
+    font-size: 1.5rem;
     text-align: center;
+    margin-block: 1rem;
 }
 
 .attribution a {
