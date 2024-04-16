@@ -176,10 +176,6 @@ article:nth-child(2)::after {
 }
 
 article:nth-child(4)::after {
-    background-color: rgba(85, 115, 234, 0.293);
-}
-
-article:nth-child(6)::after {
     display: none;
 }
 
@@ -226,4 +222,12 @@ article:nth-child(6)::after {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* ============= MEDIUM DEVICES ============= */
+@media screen and (max-width: 1440px) {
+    body {
+        background: red;
+    }
 }
