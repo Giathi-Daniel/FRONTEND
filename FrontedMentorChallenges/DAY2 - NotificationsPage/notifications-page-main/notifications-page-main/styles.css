@@ -159,6 +159,7 @@ strong {
     padding: 1rem;
     border-radius: .6rem;
     inline-size: 150%;
+    top: 5rem;
 }
 
 .message>p {
