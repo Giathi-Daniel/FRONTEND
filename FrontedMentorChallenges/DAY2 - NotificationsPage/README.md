@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Sln-url](https://your-solution-url.com)
-- Live Site URL: [Live-url](https://your-live-site-url.com)
+- Live Site URL: [Live-url](https://notifypage.netlify.app/)
 
 ## My process
 
