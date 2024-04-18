@@ -32,10 +32,15 @@ body {
 
 .container {
     margin: 6rem auto;
-    inline-size: 40%;
+    inline-size: 31%;
     background: var(--color-neutral-white);
     padding: 3rem 2rem 2rem;
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, .1);
+}
+
+.em {
+    color: var(--color-primary-blue);
+    font-weight: 800;
 }
 
 
@@ -73,6 +78,104 @@ header p {
 }
 
 /* **************** MAIN STYLING **************** */
+main {
+    margin-block: 2rem;
+}
+
+article {
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 1rem;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+}
+
+.read {
+    background: var(--very-light-grayish-blue);
+    cursor: pointer;
+}
+
+.profile_name {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--dark-grayish-blue);
+    position: relative;
+}
+
+
+.profile_image {
+    margin-inline-end: -2rem;
+}
+
+.profile_image img {
+    inline-size: 70%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.profile_desc {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.chess_img {
+    position: absolute;
+    right: -14rem;
+    top: -.5rem;
+}
+
+.chess_img img {
+    inline-size: 50px;
+}
+
+.profile_text {
+    position: relative;
+    color: var(--grayish-blue);
+}
+
+.msg_icon {
+    background: var(--color-primary-red);
+    inline-size: 6px;
+    border-radius: 50px;
+    block-size: 6px;
+    position: absolute;
+    inset-inline-end: -1rem;
+    inset-block-start: -.1px;
+    margin-block-start: .8rem;
+    box-sizing: border-box;
+}
+
+.time {
+    color: var(--grayish-blue);
+}
+
+.message {
+    position: absolute;
+    border: 1px solid var(--grayish-blue);
+    padding: 1rem;
+    border-radius: .6rem;
+    inline-size: 150%;
+}
+
+.message>p {
+    color: var(--grayish-blue);
+}
+
+.top {
+    margin-block-start: 8rem;
+}
+
+.nathan {
+    margin-inline-start: 2rem;
+}
+
+.nathan-profile img {
+    inline-size: 100%;
+}
 
 
 /* **************** FOOTER **************** */
