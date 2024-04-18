@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-    margin: 6rem auto;
+    margin: 2rem auto;
     inline-size: 31%;
     background: var(--color-neutral-white);
     padding: 3rem 2rem 2rem;
@@ -42,6 +42,14 @@ body {
 .em {
     color: var(--color-primary-blue);
     font-weight: 800;
+}
+
+article.marked {
+    background: none;
+}
+
+.msg_icon.hidden {
+    display: none;
 }
 
 
@@ -70,11 +78,17 @@ header {
     color: var(--color-neutral-white);
     align-items: center;
     margin-block-start: -.4rem;
+    transition: var(--transition);
 }
 
 header a {
     color: var(--dark-grayish-blue);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+header a:hover {
+    color: var(--color-primary-blue);
 }
 
 /* **************** MAIN STYLING **************** */
@@ -93,6 +107,7 @@ article {
 
 .read {
     background: var(--very-light-grayish-blue);
+    transition: var(--transition);
 }
 
 .profile_name {
@@ -100,8 +115,13 @@ article {
     font-size: 1.2rem;
     color: var(--dark-grayish-blue);
     position: relative;
+    transition: var(--transition);
+    cursor: pointer;
 }
 
+.profile_name:hover {
+    color: var(--color-primary-blue);
+}
 
 .profile_image {
     margin-inline-end: -2rem;
@@ -113,6 +133,13 @@ article {
 
 strong {
     font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+strong:hover {
+    color: var(--color-primary-blue);
+    font-weight: 800;
 }
 
 .profile_desc {
@@ -123,12 +150,18 @@ strong {
 
 .chess_img {
     position: absolute;
-    right: -14rem;
-    top: -.5rem;
+    inset-inline-end: -14rem;
+    inset-block-start: -.5rem;
 }
 
 .chess_img img {
     inline-size: 50px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.chess_img img:hover {
+    background: var(--light-grayish-blue-1);
 }
 
 .profile_text {
@@ -146,6 +179,7 @@ strong {
     inset-block-start: -.1px;
     margin-block-start: .8rem;
     box-sizing: border-box;
+    transition: var(--transition);
 }
 
 .time {
@@ -154,11 +188,12 @@ strong {
 
 .message {
     position: absolute;
-    border: 1px solid var(--grayish-blue);
+    border: none;
     padding: 1rem;
     border-radius: .6rem;
     inline-size: 150%;
-    top: 5rem;
+    inset-block-start: 5rem;
+    background: var(--light-grayish-blue-1);
 }
 
 .message>p {
