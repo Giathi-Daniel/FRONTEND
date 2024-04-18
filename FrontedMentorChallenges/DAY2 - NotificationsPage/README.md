@@ -26,10 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![DesktopView](./design/desktop-preview.png)
-![Active1](./design/active-states-1.png)
 ![Active2](./design/active-states-2.png)
 ![Active3](./design/active-states-3.png)
+![Active1](./design/active-states-1.png)
+![DesktopView](./design/desktop-preview.png)
 ![MobileView](./design/mobile-design.png)
 
 ### Links
