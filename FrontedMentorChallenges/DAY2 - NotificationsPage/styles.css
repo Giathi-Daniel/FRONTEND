@@ -41,6 +41,12 @@ body {
 
 .em {
     color: var(--color-primary-blue);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.em:hover {
     font-weight: 800;
 }
 
