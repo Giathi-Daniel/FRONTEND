@@ -27,6 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![DesktopView](./design/desktop-preview.png)
+![MobileView](./design/mobile-design.png)
 
 ### Links
 
