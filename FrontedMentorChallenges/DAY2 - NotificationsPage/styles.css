@@ -156,7 +156,7 @@ strong:hover {
 
 .chess_img {
     position: absolute;
-    inset-inline-end: -5rem;
+    inset-inline-end: -11rem;
     inset-block-start: -.5rem;
 }
 
@@ -197,7 +197,7 @@ strong:hover {
     border: none;
     padding: 1rem;
     border-radius: .6rem;
-    inline-size: 170%;
+    inline-size: 190%;
     inset-block-start: 5rem;
     background: var(--light-grayish-blue-1);
     inline-size: 100%;
