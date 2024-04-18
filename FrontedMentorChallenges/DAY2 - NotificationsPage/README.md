@@ -50,14 +50,19 @@ Users should be able to:
 
 I learnt the difference between .querySelectorAll and .querySelector DOM elements
 
-I also revisited about textContent and innerHTML
-
-To see how you can add code snippets, see below:
-
 ```JS
 document.querySelectorAll('.read')
 document.querySelector('.mark')
 ```
+
+I also revisited about textContent and innerHTML
+
+```JS
+msg.textContent = "0"
+msg.innerHTML = "No messages found"
+```
+
+To see how you can add code snippets, see below:
 
 ## Author
 
