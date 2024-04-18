@@ -50,7 +50,7 @@ Users should be able to:
 
 I learnt the difference between .querySelectorAll and .querySelector DOM elements
 
-I also went some revision about textContent and innerHTML
+I also revisited about textContent and innerHTML
 
 To see how you can add code snippets, see below:
 
@@ -62,4 +62,4 @@ document.querySelector('.mark')
 ## Author
 
 - Website - [BLACKSHARK](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Giathi-Daniel](https://www.frontendmentor.io/profile/Giathi-Daniel)
