@@ -227,6 +227,92 @@ strong:hover {
 
 /* ******************************* MEDIA QUERIES ***************************************** */
 /* ************************* LARGE SCREEN ************************************* */
-@media screen and(min-width: 1440px) {}
+/* @media screen and (min-width: 768px) {
+    .container {
+        inline-size: 100%;
+    }
+} */
 
-@media screen and(max-width: 375px) {}
+@media (max-width: 400px) {
+    .container {
+        inline-size: 100%;
+        margin-block: 0;
+    }
+
+    .header_title {
+        margin-inline-end: auto;
+    }
+
+    .header_title h3 {
+        font-size: 1.3rem;
+    }
+
+    .header_title span {
+        inline-size: 3px;
+        block-size: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header a {
+        font-size: 1.1rem;
+        margin-inline-end: -1.3rem;
+    }
+
+    article {
+        inline-size: 110%;
+        margin-inline-start: -1.2rem;
+        padding-inline-end: 3rem;
+    }
+
+    .mark .profile_image img {
+        inline-size: 70% !important;
+        margin-inline-end: 4rem;
+    }
+
+    .angela .profile_image img {
+        max-inline-size: 70% !important;
+        margin-inline-end: -2rem;
+    }
+
+    .profile_name {
+        font-size: 1.1rem;
+    }
+
+    .profile_text {
+        font-size: 1rem;
+    }
+
+    .profile_image {
+        margin-inline-end: -1rem;
+    }
+
+    .time {
+        font-size: 1rem;
+    }
+
+    .profile_desc {
+        line-height: 1.3;
+    }
+
+    .chess_img {
+        inset-inline-end: -3.5rem;
+    }
+
+    .message {
+        inline-size: 120%;
+    }
+
+    .top {
+        margin-block-start: 11rem;
+    }
+
+    .attribution {
+        font-size: 1rem;
+    }
+
+    .attribution a {
+        font-size: .9rem;
+    }
+}
