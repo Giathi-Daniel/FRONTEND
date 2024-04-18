@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -71,10 +72,9 @@ header {
     margin-block-start: -.4rem;
 }
 
-header p {
+header a {
     color: var(--dark-grayish-blue);
     font-size: 1rem;
-    cursor: pointer;
 }
 
 /* **************** MAIN STYLING **************** */
@@ -93,7 +93,6 @@ article {
 
 .read {
     background: var(--very-light-grayish-blue);
-    cursor: pointer;
 }
 
 .profile_name {
