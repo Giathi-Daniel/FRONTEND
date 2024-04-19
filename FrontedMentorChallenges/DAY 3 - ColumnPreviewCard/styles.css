@@ -33,6 +33,7 @@ body {
     font-size: 1.3rem;
     font-family: "Lexend Deca", sans-serif;
     border-radius: 7rem;
+    margin-block-start: -5rem;
 }
 
 .btn:hover {
@@ -60,7 +61,7 @@ p {
 
 /* ************************** MAIN ************************** */
 .container {
-    margin: 3rem auto;
+    margin: 6rem auto;
     inline-size: 70%;
     background: var(--color-primary);
     border-radius: .3rem;
@@ -80,9 +81,13 @@ p {
 .column_card-sedan,
 .column_card-suv,
 .column_card-luxury {
-    padding: 2rem 3rem;
+    padding: 6rem 3rem;
     inline-size: 100%;
     block-size: 50vh;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: none;
 }
 
 .column_card-sedan {
@@ -115,11 +120,9 @@ p {
 
 /* ************************** FOOTER ************************** */
 /* ************** LARGER SCREENS ************** */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1444px) {
     .container {
-        background: red;
-        inline-size: 86%;
-        margin: 1rem;
+        margin: 3rem auto;
         padding-block: 3rem;
     }
 
@@ -131,5 +134,50 @@ p {
     .column_card-luxury {
         border-start-end-radius: 0;
         border-end-start-radius: .7rem;
+    }
+
+    .column_container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        inline-size: 70%;
+    }
+
+    .btn {
+        position: absolute;
+        inset-block-start: 26.5rem;
+        margin-block-end: 10rem;
+    }
+
+    .column_card-sedan,
+    .column_card-suv,
+    .column_card-luxury {
+        padding-block: 3rem;
+        block-size: auto;
+    }
+
+    .column_card-sedan img,
+    .column_card-suv img,
+    .column_card-luxury img {
+        inline-size: 30%;
+    }
+
+    .attribution {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .container {
+        inline-size: 100%;
+    }
+
+    .column_container {
+        grid-template-columns: 1fr;
+        margin-block-start: -4rem;
+        margin-inline-start: -1rem;
+        inline-size: 80%;
+    }
+
+    .attribution {
+        font-size: 1.1rem;
     }
 }
