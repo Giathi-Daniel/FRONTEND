@@ -120,7 +120,7 @@ p {
 
 /* ************************** FOOTER ************************** */
 /* ************** LARGER SCREENS ************** */
-@media screen and (max-width: 1444px) {
+@media screen and (max-width: 1240px) {
     .container {
         margin: 3rem auto;
         padding-block: 3rem;
