@@ -46,7 +46,7 @@ body {
 h1 {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 800;
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: var(--color-primary);
     margin-block-start: 1em;
 }
@@ -61,7 +61,7 @@ p {
 
 /* ************************** MAIN ************************** */
 .container {
-    margin: 6rem auto;
+    margin: 7rem auto;
     inline-size: 70%;
     background: var(--color-primary);
     border-radius: .3rem;
@@ -69,21 +69,21 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 8rem;
+    padding-block: 4rem;
 }
 
 .column_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    inline-size: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    inline-size: 80%;
 }
 
 .column_card-sedan,
 .column_card-suv,
 .column_card-luxury {
-    padding: 6rem 3rem;
+    padding: 2rem 1.5rem;
     inline-size: 100%;
-    block-size: 50vh;
+    block-size: auto;
     position: relative;
     overflow: hidden;
     border: none;
@@ -108,7 +108,7 @@ p {
 
 /* ************************** FOOTER ************************** */
 .attribution {
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     font-family: "Big Shoulders Display", sans-serif;
 }
@@ -141,12 +141,6 @@ p {
         inline-size: 70%;
     }
 
-    .btn {
-        position: absolute;
-        inset-block-start: 26.5rem;
-        margin-block-end: 10rem;
-    }
-
     .column_card-sedan,
     .column_card-suv,
     .column_card-luxury {
@@ -161,7 +155,7 @@ p {
     }
 
     .attribution {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
 
@@ -178,6 +172,6 @@ p {
     }
 
     .attribution {
-        font-size: 1.1rem;
+        font-size: .75rem;
     }
 }
