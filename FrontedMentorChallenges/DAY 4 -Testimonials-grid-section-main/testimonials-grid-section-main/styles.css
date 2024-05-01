@@ -183,10 +183,56 @@ body {
 /* ================================= FOOTER ======================================== */
 
 .attribution {
-    font-size: 11px;
+    font-size: 2rem;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+/* ================================= MEDIA QUESRIES ======================================== */
+/* ================== MEDIUM SCREENS ================== */
+@media screen and (max-width: 1024px) {
+    .container {
+        inline-size: 95%;
+    }
+
+    .article_main {
+        grid-template-columns: 1fr;
+    }
+
+    .attribution {
+        font-size: 1.2rem;
+        padding-block-end: 3rem;
+        padding-inline: 1.5rem;
+    }
+}
+
+/* ================== SMALL SCREENS ================== */
+@media screen and (max-width: 764px) {
+    .container {
+        inline-size: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .article_main {
+        padding: 2rem;
+    }
+
+    .artilce_top {
+        grid-template-columns: 1fr;
+    }
+
+    .artilce_down {
+        grid-template-columns: 1fr;
+    }
+
+    .attribution {
+        padding-block: 3rem;
+        font-size: 1rem;
+    }
 }
