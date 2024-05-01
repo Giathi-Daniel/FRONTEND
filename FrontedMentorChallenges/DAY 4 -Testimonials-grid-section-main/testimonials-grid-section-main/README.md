@@ -13,8 +13,8 @@
 
 ### Links
 
-- [Solution URL:](https://www.frontendmentor.io/solutions/responsive-testimonials-page-using-css-grid-IjqnxFPY7m)
-- [Live Site URL:](https://testimonial-grid-page.netlify.app/)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-testimonials-page-using-css-grid-IjqnxFPY7m)
+- [Live Site URL](https://testimonial-grid-page.netlify.app/)
 
 ## My process
 
