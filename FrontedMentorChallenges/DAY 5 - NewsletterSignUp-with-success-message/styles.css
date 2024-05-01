@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: hsl(234, 29%, 20%);
+    --heading-color: hsl(235, 18%, 26%);
+    --primary-color: hsl(231, 7%, 60%);
+    --main-bg: hsl(0, 0%, 100%);
+    --primary-bg: hsl(4, 100%, 67%);
+}
+
+body {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+
 /* ============================== FOOTER ==============================  */
 .attribution {
     font-size: 11px;
