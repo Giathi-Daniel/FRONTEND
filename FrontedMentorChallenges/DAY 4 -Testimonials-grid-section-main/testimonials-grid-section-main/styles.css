@@ -72,8 +72,25 @@ body {
     box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
 }
 
+.article_lg-1 .testimonial_profile {
+    position: relative;
+}
+
+.imge_img img {
+    position: absolute;
+    right: 0;
+    inline-size: 100px;
+    margin-inline-end: 3rem;
+    opacity: .5;
+}
+
 .article_lg-1 small {
     color: #fff;
+}
+
+.article_lg-1 .testimonial_desc h5 {
+    z-index: 99999999999999;
+    opacity: i;
 }
 
 .article_lg-1 .testimonial_txt p,
@@ -234,5 +251,10 @@ body {
     .attribution {
         padding-block: 3rem;
         font-size: 1rem;
+    }
+
+    .imge_img img {
+        inline-size: 50px;
+        margin-inline-end: 0;
     }
 }
