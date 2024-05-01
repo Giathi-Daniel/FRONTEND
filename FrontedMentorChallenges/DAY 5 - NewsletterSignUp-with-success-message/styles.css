@@ -19,6 +19,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* ============================== MAIN ==============================  */
+
+
 /* ============================== FOOTER ==============================  */
 .attribution {
     font-size: 11px;
@@ -28,3 +31,11 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* ============================== MEDIA QUERIES ==============================  */
+/* ====================== MEDIUM SCREENS ======================  */
+@media screen and (max-width: 1024px) {}
+
+/* ====================== SMALL SCREENS ======================  */
+@media screen and (max-width: 764px) {}
