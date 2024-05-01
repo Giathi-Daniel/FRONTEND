@@ -30,6 +30,8 @@ p {
 
 body {
     font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
 }
 
 .container {
@@ -48,7 +50,7 @@ body {
     gap: 2%;
     inline-size: 100%;
     block-size: auto;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .article_left {
@@ -68,8 +70,19 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: .3rem;
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
+}
 
+.article_lg-1 small {
+    color: #fff;
+}
+
+.article_lg-1 .testimonial_txt p,
+.article_lg-2 .testimonial_txt p,
+.article_sm-1 .testimonial_txt p,
+.article_sm-2 .testimonial_txt p,
+.article_right .testimonial_txt p {
+    font-weight: bold;
 }
 
 .testimonial_profile {
@@ -93,25 +106,22 @@ body {
 }
 
 .article_sm-2 {
-    background: var(--color_neutral-1);
+    background: var(--article_lg-2);
     border-radius: .3rem;
     padding: 1rem;
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
+    color: #fff;
 }
 
-.article_sm-2 h5 {
-    color: #000 !important;
+.article_sm-2 small,
+.article_lg-2 small {
+    color: #fff;
 }
 
 .article_sm-2 .artilce_down {
     display: grid;
     grid-template-columns: 20% auto;
     gap: 1rem;
-}
-
-.article_sm-1 {
-    background: var(--article_lg-2);
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
 }
 
 
@@ -125,15 +135,20 @@ body {
     padding: 1rem;
     border-radius: .3rem;
     background: #fff;
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
 }
 
-/* .article_sm-1 p {
-    
-} */
+.article_sm-1 small {
+    color: #555;
+}
 
 .article_sm-1 h5 {
-    color: var(--color_neutral-1);
+    color: var(--article_lg-2);
+    font-weight: bold;
+}
+
+.article_sm-1 p {
+    color: #000;
 }
 
 
@@ -141,20 +156,22 @@ body {
     background: var(--article_sm-1);
     padding: 1rem;
     border-radius: .3rem;
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
 }
 
 .article_right {
+    background: #fff;
     padding: 1rem;
     border-radius: .3rem;
-    box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, .1);
 }
 
 .article_right .profile_desc h5 {
     color: #000;
 }
 
-.article_right .testimonial_txt p {
+.article_right .testimonial_txt p,
+.article_right .profile_desc p {
     color: #000;
 }
 
