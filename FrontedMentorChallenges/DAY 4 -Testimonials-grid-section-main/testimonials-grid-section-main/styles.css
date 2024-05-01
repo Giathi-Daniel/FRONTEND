@@ -38,9 +38,7 @@ body {
     background: var(--article-bg);
     box-shadow: 0px 1px 6px rgba(0, 0, 0, .5);
     margin: 3rem auto;
-    inline-size: 80%;
-    block-size: 90vh;
-    object-fit: cover;
+    inline-size: 90%;
 }
 
 
@@ -50,10 +48,8 @@ body {
     display: grid;
     grid-template-columns: 70% 25%;
     gap: 2%;
-    inline-size: 80%;
-    padding: 2rem;
-    position: absolute;
-    object-fit: cover;
+    inline-size: 100%;
+    padding: 5rem;
 }
 
 .article_left {
