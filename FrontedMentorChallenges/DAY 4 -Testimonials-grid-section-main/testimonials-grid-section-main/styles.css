@@ -256,5 +256,6 @@ body {
     .imge_img img {
         inline-size: 50px;
         margin-inline-end: 0;
+        opacity: e;
     }
 }
