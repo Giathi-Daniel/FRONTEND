@@ -128,6 +128,10 @@ body {
     box-shadow: 0 5rem 9rem rgba(0, 0, 0, .3);
 }
 
+/* .article_sm-1 p {
+    
+} */
+
 .article_sm-1 h5 {
     color: var(--color_neutral-1);
 }
