@@ -19,8 +19,31 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-/* ============================== MAIN ==============================  */
+h1 {
+    font-size: 2rem;
+    color: var(--heading-color);
+}
 
+p {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    background: var(--bg-color);
+    padding: 1.3rem 3rem;
+    inline-size: 100%;
+}
+
+/* ============================== MAIN ==============================  */
+.success_msg {
+    display: none;
+}
 
 /* ============================== FOOTER ==============================  */
 .attribution {
