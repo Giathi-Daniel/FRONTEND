@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
 :root {
@@ -11,6 +13,7 @@
     --primary-color: hsl(231, 7%, 60%);
     --main-bg: hsl(0, 0%, 100%);
     --primary-bg: hsl(4, 100%, 67%);
+    --transition: all 400ms;
 }
 
 body {
@@ -20,13 +23,23 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
-    color: var(--heading-color);
+    font-size: 2.6rem;
+    color: var(--bg-color);
+    margin-block-start: .5rem;
+    margin-block-end: 1.5rem;
+    font-weight: 600;
 }
 
 p {
-    font-size: .9rem;
+    font-size: .7rem;
     color: var(--primary-color);
+    margin-block: .3rem;
+    display: flex;
+    gap: .5rem;
+}
+
+p>svg {
+    inline-size: .8rem;
 }
 
 .btn {
@@ -36,11 +49,79 @@ p {
     color: #fff;
     cursor: pointer;
     background: var(--bg-color);
-    padding: 1.3rem 3rem;
+    padding-block: .7rem;
     inline-size: 100%;
+    font-size: .5rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--primary-bg);
+    box-shadow: 0px 3px 8px var(--primary-bg);
 }
 
 /* ============================== MAIN ==============================  */
+.container {
+    margin: 3rem auto;
+    background: var(--bg-color);
+    padding: 5rem;
+    inline-size: 70%;
+    block-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_up-container {
+    background: var(--main-bg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    block-size: 60vh;
+    border-radius: 1rem;
+    padding: 2rem;
+    inline-size: 90%;
+}
+
+.form_text {
+    padding-block-start: 1.5rem;
+}
+
+.form_image {
+    inline-size: 100%;
+    block-size: 100%;
+    position: relative;
+}
+
+.form_image svg {
+    block-size: 55vh;
+    position: absolute;
+    inset-inline-end: -7rem;
+    inset-block-start: -1rem;
+}
+
+label {
+    display: block;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid var(--primary-color);
+    border-radius: .2rem;
+    inline-size: 100%;
+    margin-block-end: 1rem;
+    padding-block: .5rem;
+    padding-inline-start: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+input:hover {
+    border: 1px solid #000;
+}
+
 .success_msg {
     display: none;
 }
