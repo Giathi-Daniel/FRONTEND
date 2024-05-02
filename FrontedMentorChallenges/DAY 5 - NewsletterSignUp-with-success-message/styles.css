@@ -83,7 +83,6 @@ p>svg {
     border-radius: 1rem;
     padding: 2rem 0 2rem 2rem;
     inline-size: 80%;
-    display: none;
 }
 
 .form_text {
@@ -133,7 +132,7 @@ input:hover {
     flex-direction: column;
     inline-size: 35%;
     padding: 2rem;
-    /* display: none; */
+    display: none;
 }
 
 .msg_container {
@@ -176,7 +175,15 @@ input:hover {
 
 /* ============================== MEDIA QUERIES ==============================  */
 /* ====================== MEDIUM SCREENS ======================  */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .container {
+        background: red;
+    }
+}
 
 /* ====================== SMALL SCREENS ======================  */
-@media screen and (max-width: 764px) {}
+@media screen and (max-width: 764px) {
+    .container {
+        background: yellow;
+    }
+}
