@@ -72,6 +72,7 @@ p>svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .sign_up-container {
@@ -80,8 +81,8 @@ p>svg {
     grid-template-columns: 1fr 1fr;
     block-size: 60vh;
     border-radius: 1rem;
-    padding: 2rem;
-    inline-size: 90%;
+    padding: 2rem 0 2rem 2rem;
+    inline-size: 80%;
 }
 
 .form_text {
@@ -96,8 +97,9 @@ p>svg {
 
 .form_image svg {
     block-size: 55vh;
+    inline-size: 100%;
     position: absolute;
-    inset-inline-end: -7rem;
+    inset-inline-end: -1rem;
     inset-block-start: -1rem;
 }
 
@@ -123,7 +125,37 @@ input:hover {
 }
 
 .success_msg {
+    position: absolute;
+    background: var(--main-bg);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    inline-size: 35%;
+    padding: 2rem;
     display: none;
+}
+
+.msg_container {
+    inline-size: 90%;
+}
+
+.msg_container svg {
+    background: var(--primary-bg);
+    display: flex;
+    border-radius: 50%;
+    inline-size: 2rem;
+    block-size: 2rem;
+    margin-block-end: 2rem;
+}
+
+.success_title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-block-end: .9rem;
+}
+
+.msg_container p {
+    color: #000;
 }
 
 /* ============================== FOOTER ==============================  */
