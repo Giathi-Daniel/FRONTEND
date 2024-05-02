@@ -47,6 +47,7 @@ p>svg {
     justify-content: center;
     align-items: center;
     color: #fff;
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
     background: var(--bg-color);
     padding-block: .7rem;
@@ -107,6 +108,7 @@ label {
     display: block;
     font-size: .7rem;
     font-weight: 600;
+    font-family: "Roboto", sans-serif;
 }
 
 input {
@@ -118,6 +120,7 @@ input {
     padding-inline-start: 1rem;
     cursor: pointer;
     transition: var(--transition);
+    font-family: "Roboto", sans-serif;
 }
 
 input:hover {
@@ -181,13 +184,72 @@ input:hover {
 /* ====================== MEDIUM SCREENS ======================  */
 @media screen and (max-width: 1024px) {
     .container {
-        background: red;
+        inline-size: 90%;
+        padding: 0;
+
     }
+
+    .sign_up-container {
+        grid-template-columns: 1fr;
+        inline-size: 80%;
+        margin-block-start: -20rem;
+        padding: 2rem;
+        block-size: 40rem;
+    }
+
 }
 
 /* ====================== SMALL SCREENS ======================  */
 @media screen and (max-width: 764px) {
     .container {
-        background: yellow;
+        inline-size: 100%;
+        padding: 0;
+        background: var(--main-bg);
+    }
+
+    .sign_up-container {
+        grid-template-columns: 1fr;
+        inline-size: 100%;
+        padding: 0;
+        block-size: 100vh;
+    }
+
+    h1 {
+        margin-block-start: 30rem;
+        margin-inline-start: 2rem;
+    }
+
+    p {
+        margin-inline-start: 1.5rem;
+        font-size: 1.3rem;
+        margin-block: .9rem;
+        line-height: 2rem;
+        margin-inline-end: .5rem;
+    }
+
+    p>svg {
+        inline-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        inline-size: 90%;
+    }
+
+    form {
+        margin-inline-start: 1.5rem
+    }
+
+    label {
+        font-size: 1rem;
+        margin-block-end: 1rem;
+    }
+
+    input {
+        inline-size: 90%;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
     }
 }
