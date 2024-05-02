@@ -2,13 +2,15 @@
 
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-![Active states](./design/desktop-preview.jpg)
-![Desktop Design](./design/desktop-preview.jpg)
-![Desktop Design preview-success-active](./design/desktop-preview.jpg)
-![Desktop Design preview-success](./design/desktop-preview.jpg)
-![Error States](./design/desktop-preview.jpg)
-![Mobile Design solution](./design/desktop-preview.jpg)
-![Mobile-design preview with success solution](./design/desktop-preview.jpg)
+![Active states](./design/active-states.png)
+![Desktop Design](./design/desktop-design.png)
+![Desktop preview-success](./design/desktop-success.png)
+![Desktop-success-active](./design/desktop-success-active.png)
+
+<!-- ![Error States](./design/desktop-preview.jpg) -->
+
+![Mobile Design solution](./design/mobile-design.jpg)
+![Mobile success](./design/mobile-success.jpg)
 
 ## Table of contents
 
@@ -19,14 +21,12 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL: ](https://your-solution-url.com)
+- [Live Site URL: ](https://your-live-site-url.com)
 
 ## My process
 
