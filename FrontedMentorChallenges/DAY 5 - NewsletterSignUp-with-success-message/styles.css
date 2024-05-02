@@ -65,10 +65,10 @@ p>svg {
 /* ============================== MAIN ==============================  */
 .container {
     margin: 3rem auto;
-    background: var(--bg-color);
+    background: var(--heading-color);
     padding: 5rem;
     inline-size: 70%;
-    block-size: auto;
+    block-size: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +83,7 @@ p>svg {
     border-radius: 1rem;
     padding: 2rem 0 2rem 2rem;
     inline-size: 80%;
+    display: none;
 }
 
 .form_text {
@@ -132,11 +133,11 @@ input:hover {
     flex-direction: column;
     inline-size: 35%;
     padding: 2rem;
-    display: none;
+    /* display: none; */
 }
 
 .msg_container {
-    inline-size: 90%;
+    inline-size: 100%;
 }
 
 .msg_container svg {
@@ -156,6 +157,10 @@ input:hover {
 
 .msg_container p {
     color: #000;
+}
+
+.msg_container .btn {
+    font-size: .6rem;
 }
 
 /* ============================== FOOTER ==============================  */
