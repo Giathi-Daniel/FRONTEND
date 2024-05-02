@@ -135,6 +135,10 @@ input:hover {
     display: none;
 }
 
+/* .success_msg.active {
+    display: block;
+} */
+
 .msg_container {
     inline-size: 100%;
 }
