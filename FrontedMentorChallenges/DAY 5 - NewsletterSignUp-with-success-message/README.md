@@ -25,8 +25,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- [Solution URL: ](https://your-solution-url.com)
-- [Live Site URL: ](https://your-live-site-url.com)
+- [Solution URL: ](https://www.frontendmentor.io/solutions/newslettersignupwithsuccess-thidwH3tuG)
+- [Live Site URL: ](https://newsletter-challenge-signup.netlify.app/)
 
 ## My process
 
