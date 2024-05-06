@@ -9,7 +9,7 @@ const Navigation = () => {
           <li className="features">
             <a href="#">
               Features <i></i>
-              <ul className="drop-down">
+              {/* <ul className="drop-down">
                 <li>
                   <i></i>
                   <a href="#">Todo List</a>
@@ -26,17 +26,17 @@ const Navigation = () => {
                   <i></i>
                   <a href="#">Planning</a>
                 </li>
-              </ul>
+              </ul> */}
             </a>
           </li>
           <li className="company">
             <a href="#">
               Company <i></i>
-              <ul className="drop-down">
+              {/* <ul className="drop-down">
                 <li>History</li>
                 <li>Our Team</li>
                 <li>Blog</li>
-              </ul>
+              </ul> */}
             </a>
           </li>
           <li>
