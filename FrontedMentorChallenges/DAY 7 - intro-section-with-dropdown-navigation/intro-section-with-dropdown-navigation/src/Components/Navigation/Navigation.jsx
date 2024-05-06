@@ -1,7 +1,12 @@
 import React from "react";
 
 const Navigation = () => {
-  return <div>Features Company Careers About Login Register</div>;
+  return (
+    <nav>
+      <a href="#">Navigation</a>
+      <div></div>
+    </nav>
+  );
 };
 
 export default Navigation;
