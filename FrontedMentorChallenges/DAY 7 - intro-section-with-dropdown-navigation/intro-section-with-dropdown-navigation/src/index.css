@@ -4,6 +4,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 :root {
@@ -30,6 +32,24 @@ body {
 
 section {
   padding: 6rem 0;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .attribution {
