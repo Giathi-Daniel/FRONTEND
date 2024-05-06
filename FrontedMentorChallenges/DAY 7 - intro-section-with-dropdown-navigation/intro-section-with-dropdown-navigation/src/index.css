@@ -6,13 +6,30 @@
   text-decoration: none;
 }
 
+:root {
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 96%;
+
+  --transition: all 400ms ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Courier New', Courier, monospace;
+  line-height: 2.1rem;
+}
 
+.container {
+  inline-size: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
 }
 
 .attribution {
