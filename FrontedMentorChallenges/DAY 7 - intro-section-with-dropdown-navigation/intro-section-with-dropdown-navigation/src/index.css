@@ -46,10 +46,25 @@ section {
   padding: 1rem 1.5rem;
 }
 
-.btn:hover {
+.btn_primary {
+  background: transparent;
+  color: #000;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 1px solid #000;
+}
+
+.btn:hover,
+.btn_primary:hover {
   background: transparent;
   border: 1px solid #000;
   color: #000;
+  font-weight: bold;
 }
 
 .attribution {

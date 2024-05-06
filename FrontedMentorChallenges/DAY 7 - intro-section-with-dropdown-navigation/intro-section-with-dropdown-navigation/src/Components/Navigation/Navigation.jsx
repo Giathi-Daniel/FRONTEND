@@ -4,10 +4,17 @@ const Navigation = () => {
   return (
     <nav>
       <div>
-        <a href="#">Navigation</a>
+        <a href="#">snap</a>
         <ul className="nav_links">
           <li>
-            <a href="#">Features</a>
+            <a href="#">
+              Features
+              <ul className="drop-down">
+                <li>
+                  <a href=""></a>
+                </li>
+              </ul>
+            </a>
           </li>
           <li>
             <a href="#">Company</a>
