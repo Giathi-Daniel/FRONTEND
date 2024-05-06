@@ -1,0 +1,6 @@
+nav {
+    display: grid;
+    inline-size: 100%;
+    inset-block-start: 0;
+    block-size: 6rem;
+}

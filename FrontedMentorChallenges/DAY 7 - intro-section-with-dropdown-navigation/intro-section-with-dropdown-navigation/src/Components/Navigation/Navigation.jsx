@@ -3,7 +3,7 @@ import React from "react";
 const Navigation = () => {
   return (
     <nav>
-      <div>
+      <div className="nav_container">
         <a href="#">snap</a>
         <ul className="nav_links">
           <li className="features">
