@@ -6,18 +6,38 @@ const Navigation = () => {
       <div>
         <a href="#">snap</a>
         <ul className="nav_links">
-          <li>
+          <li className="features">
             <a href="#">
-              Features
+              Features <i></i>
               <ul className="drop-down">
                 <li>
-                  <a href=""></a>
+                  <i></i>
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <i className="fas fa-calendar"></i>
+                  <a href="#">Calendar</a>
+                </li>
+                <li>
+                  <i className="fas fa-notifications"></i>
+                  <a href="#">Reminders</a>
+                </li>
+                <li>
+                  <i></i>
+                  <a href="#">Planning</a>
                 </li>
               </ul>
             </a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li className="company">
+            <a href="#">
+              Company <i></i>
+              <ul className="drop-down">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </a>
           </li>
           <li>
             <a href="#">Careers</a>
