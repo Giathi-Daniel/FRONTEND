@@ -41,6 +41,16 @@ section {
   padding: 6rem 0;
 }
 
+a {
+  color: var(--font-color);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
 .btn {
   background: #000;
   color: #fff;
@@ -62,7 +72,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding-inline: .5rem;
   border: 1px solid #000;
 }
 

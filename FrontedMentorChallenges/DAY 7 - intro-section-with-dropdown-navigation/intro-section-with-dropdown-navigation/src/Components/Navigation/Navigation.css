@@ -2,9 +2,39 @@ nav {
     block-size: 7vh;
     display: grid;
     inline-size: 96%;
-    margin: 1rem 2rem;
+    margin: 0 2rem;
 }
 
 .nav_container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    block-size: 100%;
+    inline-size: 100%;
+    padding: 1rem;
+}
+
+.nav_container .logo {
+    margin-inline-end: 2rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.nav_links {
+    display: flex;
+    margin-inline-end: auto;
+}
+
+ul li {
+    margin-inline: 1rem;
+    font-size: .9rem;
+}
+
+a ion-icon {
+    font-size: .8rem;
+}
+
+/* NAV_FORM */
+.nav_form {
     display: flex;
 }
