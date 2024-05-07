@@ -109,7 +109,6 @@ a ion-icon {
 /* ===================== TABLETS ===================== */
 @media screen and (max-width: 1024px) {
     nav {
-        background: #ff0000;
         inline-size: 100%;
         margin: 0;
     }
@@ -127,10 +126,6 @@ a ion-icon {
 
 /* ===================== PHONES ===================== */
 @media screen and (max-width: 764px) {
-    nav {
-        background: yellow;
-    }
-
     .nav_links.active {
         position: absolute;
         inset-block-start: 5rem;

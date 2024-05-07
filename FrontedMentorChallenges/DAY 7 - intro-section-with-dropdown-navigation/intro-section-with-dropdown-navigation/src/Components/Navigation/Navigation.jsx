@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navigation.css";
-import "./Navigation.js";
 
 const Navigation = () => {
+  useEffect(() => {
+    const menuOpen = document.getElementById("open");
+    const menuClose = document.getElementById("close");
+    const navItems = document.querySelector(".nav_links");
+    const formNav = document.querySelector(".nav_form");
+
+    const handleMenuOpen = () => {
+      navItems.classList.add("active");
+      formNav.style.display = "block";
+      menuOpen.style.display = "none";
+      menuClose.style.display = "block";
+    };
+
+    const handleMenuClose = () => {
+      navItems.classList.remove("active");
+      formNav.style.display = "none";
+      menuOpen.style.display = "block";
+      menuClose.style.display = "none";
+    };
+
+    menuOpen.addEventListener("click", handleMenuOpen);
+    menuClose.addEventListener("click", handleMenuClose);
+
+    return () => {
+      menuOpen.removeEventListener("click", handleMenuOpen);
+      menuClose.removeEventListener("click", handleMenuClose);
+    };
+  }, []);
+
   return (
     <nav>
       <div className="nav_container">
