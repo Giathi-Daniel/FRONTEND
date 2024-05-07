@@ -131,7 +131,7 @@ a ion-icon {
         background: yellow;
     }
 
-    .nav_links {
+    .nav_links.active {
         position: absolute;
         inset-block-start: 5rem;
         flex-direction: column;
