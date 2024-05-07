@@ -13,6 +13,10 @@
   --container-width-md: 86%;
   --container-width-sm: 96%;
 
+  --color-bg: hsl(0, 0%, 98%);
+  --color-md-gray: hsl(0, 0%, 41%);
+  --font-color: hsl(0, 0%, 8%);
+
   --transition: all 400ms ease;
 }
 
@@ -21,8 +25,10 @@ html {
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Epilogue", sans-serif;
   line-height: 2.1rem;
+  background: var(--color-bg);
+  color: var(--font-color);
 }
 
 .container {

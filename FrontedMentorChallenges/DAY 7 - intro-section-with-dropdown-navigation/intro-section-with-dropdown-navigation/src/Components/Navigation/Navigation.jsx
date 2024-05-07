@@ -1,14 +1,18 @@
 import React from "react";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
     <nav>
       <div className="nav_container">
-        <a href="#">snap</a>
+        <a href="#" className="logo">
+          snap
+        </a>
+
         <ul className="nav_links">
           <li className="features">
             <a href="#">
-              Features <i></i>
+              Features <ion-icon name="chevron-down-outline"></ion-icon>
               {/* <ul className="drop-down">
                 <li>
                   <i></i>
@@ -31,7 +35,7 @@ const Navigation = () => {
           </li>
           <li className="company">
             <a href="#">
-              Company <i></i>
+              Company <ion-icon name="chevron-down-outline"></ion-icon>
               {/* <ul className="drop-down">
                 <li>History</li>
                 <li>Our Team</li>
