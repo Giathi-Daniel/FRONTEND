@@ -38,7 +38,7 @@ body {
 }
 
 section {
-  padding: 6rem 9rem;
+  padding: 6rem 7rem;
 }
 
 a {
@@ -60,7 +60,9 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: .7rem 1.5rem;
+  inline-size: 30%;
+  margin-block-end: 3rem;
 }
 
 .btn_primary {
@@ -91,4 +93,11 @@ a:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.app_container {
+  background: #ffff;
+  inline-size: 90%;
+  margin: 2rem 4rem;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 1);
 }
