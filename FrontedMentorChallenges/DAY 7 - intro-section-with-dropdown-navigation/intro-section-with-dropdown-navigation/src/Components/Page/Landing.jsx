@@ -2,7 +2,7 @@ import React from "react";
 
 const Landing = () => {
   return (
-    <div className="page_container">
+    <section className="page_container">
       <div className="page_right">
         <h1>Make remote work</h1>
         <p>
@@ -16,7 +16,7 @@ const Landing = () => {
       <div className="page_left">
         <img src="/public/image-hero-desktop.png" alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 
