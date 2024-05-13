@@ -1,3 +1,38 @@
+/* ******************************* GENERAL STYLING ******************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-orange: hsl(26, 100%, 55%);
+    --color-pale-orange: hsl(25, 100%, 94%);
+
+    /* Neutral colors */
+    --color-heading: hsl(220, 13%, 13%);
+    --color-primary: hsl(219, 9%, 45%);
+    --color-secondary: hsl(220, 14%, 75%);
+    --color-tertiary: hsl(223, 64%, 98%);
+    --color-bg: hsl(0, 0%, 100%);
+    --color-lightbox-bg: hsl(0, 0%, 0%);
+}
+
+
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
