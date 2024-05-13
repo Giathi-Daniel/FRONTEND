@@ -24,6 +24,8 @@ html {
     --color-tertiary: hsl(223, 64%, 98%);
     --color-bg: hsl(0, 0%, 100%);
     --color-lightbox-bg: hsl(0, 0%, 0%);
+
+    --transition: all 400ms ease;
 }
 
 
@@ -37,11 +39,99 @@ body {
 .avatar {
     inline-size: 35px;
     cursor: pointer;
+    transition: var(--transition);
+}
+
+.avatar:hover {
+    border: 2px solid var(--color-orange);
+    border-radius: 50%;
+}
+
+.container {
+    background: var(--color-bg);
+    margin: 5rem auto;
+    inline-size: 90%;
+    box-shadow: 0 0 .3rem var(--color-lightbox-bg);
+    padding-inline-start: 6rem;
+    padding-inline-end: 3rem;
+    padding-block-end: 3rem;
+    block-size: auto;
 }
 
 
 /* =================== NAVIGATION STYLING =================== */
+nav {
+    inline-size: 96%;
+    display: flex;
+    padding-block-start: 1rem;
+    block-size: 4rem;
+}
 
+.nav_container {
+    display: flex;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--color-heading);
+    font-weight: 700;
+    margin-inline-end: 4rem;
+}
+
+.nav_list {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline-end: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list li a {
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav_list a:hover::after {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: -2rem;
+    inline-size: 100%;
+    block-size: 1px;
+    background: var(--color-orange);
+}
+
+.nav_menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.menu_btns {
+    inline-size: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 1rem;
+    display: none;
+}
+
+.menu_btns img {
+    inline-size: 20%;
+}
+
+/* .cart:hover {} */
 
 
 /* =================== BODY STYLING =================== */
@@ -59,4 +149,24 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* ============================== MEDIA QUERIES ============================== */
+/* =================== TABLETS =================== */
+@media screen and (max-width: 1024px) {
+    .container {
+        background: red;
+    }
+}
+
+/* =================== PHONES =================== */
+@media screen and (max-width: 764px) {
+    .container {
+        background: yellow;
+    }
+
+    .menu_btns {
+        display: block;
+    }
 }
