@@ -33,6 +33,25 @@ body {
     font-family: "Kumbh Sans", sans-serif;
 }
 
+
+.avatar {
+    inline-size: 35px;
+    cursor: pointer;
+}
+
+
+/* =================== NAVIGATION STYLING =================== */
+
+
+
+/* =================== BODY STYLING =================== */
+
+
+
+/* =================== POPUP STYLING =================== */
+
+
+/* =================== FOOTER STYLING =================== */
 .attribution {
     font-size: 11px;
     text-align: center;
