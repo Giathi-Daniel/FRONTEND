@@ -175,7 +175,7 @@ nav {
         margin-inline-end: auto;
     }
 
-    .nav_list {
+    .nav_list.active {
         position: absolute;
         inset-inline-start: 0;
         block-size: 100vh;
@@ -187,7 +187,6 @@ nav {
         padding-block-start: 0;
         align-items: start;
         padding-inline-start: 2rem;
-        display: none;
     }
 
     .nav_list li a {
