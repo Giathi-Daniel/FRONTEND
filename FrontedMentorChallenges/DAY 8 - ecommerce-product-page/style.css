@@ -156,17 +156,62 @@ nav {
 /* =================== TABLETS =================== */
 @media screen and (max-width: 1024px) {
     .container {
-        background: red;
+        inline-size: 96%;
     }
 }
 
 /* =================== PHONES =================== */
 @media screen and (max-width: 764px) {
     .container {
-        background: yellow;
+        inline-size: 100%;
+        position: relative;
+        margin: 0;
+        block-size: 5rem;
+        padding-inline-start: 3rem;
+        overflow-y: hidden;
+    }
+
+    a.logo {
+        margin-inline-end: auto;
+    }
+
+    .nav_list {
+        position: absolute;
+        inset-inline-start: 0;
+        block-size: 100vh;
+        background: var(--color-bg);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1rem 3px rgba(0, 0, 0, 1);
+        inline-size: 50%;
+        padding-block-start: 0;
+        align-items: start;
+        padding-inline-start: 2rem;
+        display: none;
+    }
+
+    .nav_list li a {
+        color: var(--color-lightbox-bg);
+        font-weight: 700;
+        inset-block-start: -15rem;
     }
 
     .menu_btns {
         display: block;
+        position: absolute;
+        inset-inline-start: 1rem;
+        align-self: center;
+    }
+
+    .menu_btns img {
+        inline-size: 40%;
+    }
+
+    #menuClose {
+        display: none;
+    }
+
+    .nav_menu {
+        gap: 1rem;
     }
 }
