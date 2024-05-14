@@ -169,10 +169,17 @@ nav {
         block-size: 5rem;
         padding-inline-start: 3rem;
         overflow-y: hidden;
+        box-shadow: none;
+        padding-inline: 3rem;
+        padding-block-end: 0;
     }
 
     a.logo {
         margin-inline-end: auto;
+    }
+
+    nav {
+        inline-size: 100%;
     }
 
     .nav_list.active {
