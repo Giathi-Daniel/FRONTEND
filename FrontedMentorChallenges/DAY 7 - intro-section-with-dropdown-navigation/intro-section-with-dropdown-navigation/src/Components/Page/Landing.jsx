@@ -17,7 +17,7 @@ const Landing = () => {
         </button>
       </div>
       <div className="page_left">
-        <img src="/public/image-hero-desktop.png" alt="" />
+        <img src="/image-hero-desktop.png" alt="" />
       </div>
     </section>
   );
