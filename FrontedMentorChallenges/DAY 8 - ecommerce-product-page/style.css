@@ -135,7 +135,44 @@ nav {
 
 
 /* =================== BODY STYLING =================== */
+section {
+    padding-block: 3rem;
+    padding-inline-start: 1rem;
+    inline-size: 86%;
+}
 
+.main_container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.product_images {
+    inline-size: 100%;
+}
+
+.main_img img {
+    inline-size: 100%;
+    border-radius: .5rem;
+}
+
+.image_thumbnails {
+    display: flex;
+    inline-size: 100%;
+    gap: .7rem;
+    transition: var(--transition);
+    margin-block-start: .5rem;
+}
+
+.image_thumbnails img {
+    inline-size: 100%;
+    border-radius: .7rem;
+}
+
+.image_thumbnails img:hover {
+    transform: blur(1);
+
+}
 
 
 /* =================== POPUP STYLING =================== */
