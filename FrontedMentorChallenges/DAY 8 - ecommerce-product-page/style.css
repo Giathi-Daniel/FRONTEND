@@ -136,7 +136,7 @@ nav {
 
 /* =================== BODY STYLING =================== */
 section {
-    padding-block: 3rem;
+    padding-block: 2rem;
     padding-inline-start: 1rem;
     inline-size: 86%;
 }
@@ -173,6 +173,92 @@ section {
     transform: blur(1);
 
 }
+
+
+/* description */
+.product_desc {
+    inline-size: 100%;
+    margin-block-start: 3rem;
+}
+
+.product_desc h4 {
+    color: var(--color-orange);
+    font-size: .7rem;
+}
+
+.product_desc h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin-block-start: .2rem;
+    font-weight: 600;
+}
+
+.product_desc p {
+    font-size: 14px;
+    margin-block-start: 1.5rem;
+    color: var(--color-primary);
+}
+
+.product_shop {
+    margin-block-start: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: -1rem;
+}
+
+.product_shop h6 {
+    color: var(--color-orange);
+    background: var(--color-pale-orange);
+    font-weight: bold;
+    padding: .1rem .5rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+}
+
+.product_offer {
+    margin-block-start: -2rem;
+    color: var(--color-tertiary);
+    font-weight: bold;
+    text-decoration: line-through;
+    margin-block-end: 5rem;
+}
+
+.product_cart_counter {
+    display: flex;
+    inline-size: 100%;
+    gap: 1rem;
+}
+
+.product_counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 25%;
+    background: var(--color-tertiary);
+    border-radius: .3rem;
+    padding: .4rem .2rem;
+}
+
+
+.product_cart {
+    background: var(--color-orange);
+    inline-size: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+    color: var(--color-bg);
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.product_cart img {
+    inline-size: 7%;
+    color: var(--color-bg);
+}
+
 
 
 /* =================== POPUP STYLING =================== */
