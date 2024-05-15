@@ -386,7 +386,7 @@ button {
         inline-size: 50%;
         padding-block-start: 0;
         align-items: start;
-        top: 0;
+        inset-block-start: 0;
         padding-inline-start: 2rem;
         z-index: 99999999999999999999;
     }
@@ -479,5 +479,16 @@ button {
 
     .product_cart {
         inline-size: 100%;
+    }
+
+    .product_cart img {
+        inline-size: 5%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .product_cart img {
+        inline-size: 7%;
     }
 }
