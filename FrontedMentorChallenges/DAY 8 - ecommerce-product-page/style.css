@@ -137,7 +137,7 @@ nav {
 /* =================== BODY STYLING =================== */
 section {
     padding-block: 2rem;
-    padding-inline-start: 1rem;
+    padding-inline-start: 3rem;
     inline-size: 86%;
 }
 
@@ -153,6 +153,7 @@ section {
 
 .main_img img {
     inline-size: 100%;
+    block-size: 100%;
     border-radius: .5rem;
 }
 
@@ -167,11 +168,14 @@ section {
 .image_thumbnails img {
     inline-size: 100%;
     border-radius: .7rem;
+    transition: var(--transition);
 }
 
 .image_thumbnails img:hover {
     transform: blur(1);
-
+    border: 2px solid var(--color-orange);
+    background: var(--color-bg);
+    filter: saturate(.2);
 }
 
 
@@ -197,6 +201,7 @@ section {
     font-size: 14px;
     margin-block-start: 1.5rem;
     color: var(--color-primary);
+    line-height: 1.7rem;
 }
 
 .product_shop {
@@ -221,7 +226,7 @@ section {
     color: var(--color-tertiary);
     font-weight: bold;
     text-decoration: line-through;
-    margin-block-end: 5rem;
+    margin-block-end: 3rem;
 }
 
 .product_cart_counter {
@@ -240,6 +245,12 @@ section {
     padding: .4rem .2rem;
 }
 
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 .product_cart {
     background: var(--color-orange);
