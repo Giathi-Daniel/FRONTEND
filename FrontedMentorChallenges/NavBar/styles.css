@@ -59,15 +59,17 @@ img {
 
 /* *************************** Navigation bar *************************** */
 nav {
-    inline-size: 100vw;
-    block-size: 6rem;
+    inline-size: 90vw;
+    block-size: 5rem;
     display: grid;
     place-items: center;
-    position: fixed;
+    position: relative;
     inset-inline-start: 0;
     inset-block-start: 0;
     z-index: 2;
     align-items: center;
+    background: gray;
+    padding: 1rem;
 }
 
 .nav_container {
@@ -80,4 +82,11 @@ nav {
 .nav_links {
     display: flex;
     gap: 4rem;
+}
+
+.nav_btn {
+    display: flex;
+    gap: 2rem;
+    margin-inline-end: auto;
+    margin-inline-start: 3rem;
 }
