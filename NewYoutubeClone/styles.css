@@ -163,8 +163,94 @@ header {
     box-sizing: border-box;
 }
 
-.header__history::-webkit-scrollbar {
+.header__history::-webkit-scrollbar,
+.search__history::-webkit-scrollbar {
     display: none;
+}
+
+/* ******************** SEARCH CONTAINER ******************** */
+.search__container {
+    /* display: none; */
+    position: fixed;
+    inset-block-start: 1rem;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background: rgba(122, 118, 118, 0.8);
+    z-index: 999999;
+    flex-direction: column;
+}
+
+.search__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#search-input {
+    margin-block-start: .5rem;
+    inline-size: 100%;
+    font-size: .8rem;
+    padding: 1rem;
+    border: none;
+    block-size: 1rem;
+    margin-inline: 1rem;
+    background: #252424;
+    color: var(--color-text);
+}
+
+.search__header ion-icon {
+    position: absolute;
+    inset-inline-end: 1.5rem;
+    inset-block-start: 1rem;
+    cursor: pointer;
+}
+
+.search__history {
+    color: var(--color-text);
+    margin-inline: 1rem;
+    block-size: 100vh;
+    overflow: auto;
+}
+
+
+.search__history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search__history ul li {
+    margin-block-end: .5rem;
+}
+
+.search__history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .3rem;
+    background: #555;
+    inline-size: 100%;
+    transition: var(--transition);
+}
+
+.search__history li ion-icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search__history li ion-icon:hover {
+    font-weight: bold;
+}
+
+.search__history ul li a {
+    background: none;
+}
+
+.search__history ul li:hover {
+    background: #000;
+
 }
 
 /* ******************************** BODY STYLING ***************************** */
@@ -273,6 +359,7 @@ footer.sticky {
     body {
         overflow-x: hidden;
     }
+
     .container {
         inline-size: var(--container-width-sm);
     }
