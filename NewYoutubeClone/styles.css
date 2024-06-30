@@ -61,6 +61,12 @@ section {
     padding-block: 3rem;
 }
 
+img {
+    cursor: pointer;
+    inline-size: 100%;
+    object-fit: cover;
+}
+
 /* ******************************** HEADER STYLING ***************************** */
 header {
     background: var(--color-primary);
@@ -160,6 +166,77 @@ header {
 .header__history::-webkit-scrollbar {
     display: none;
 }
+
+/* ******************************** BODY STYLING ***************************** */
+.home__container {
+    margin-block-start: 7rem;
+    margin-block-end: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ******************** VIDEOS ******************** */
+.home__videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.home__video-image {
+    position: relative;
+    transition: var(--transition);
+}
+
+.home__video-image img {
+    border-radius: .5rem;
+}
+
+.home__video-image img:hover {
+    border-radius: 0;
+}
+
+.video__timer {
+    position: absolute;
+    inset-block-end: 1rem;
+    inset-inline-end: .5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: .2rem;
+    font-weight: 700;
+    padding-inline: .6rem;
+}
+
+.home__video-desc {
+    display: grid;
+    grid-template-columns: 15% auto 3%;
+}
+
+.home__video-desc img {
+    border-radius: 50%;
+    inline-size: 2rem;
+}
+
+.home__video-desc-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__video-title,
+.home__video-muted {
+    font-size: .7rem;
+}
+
+.home__video-muted {
+    font-weight: 700;
+    color: var(--color-text-fade);
+}
+
+.home__video-menu ion-icon {
+    cursor: pointer;
+}
+
+/* ******************** SHORTS ******************** */
+
 
 
 
