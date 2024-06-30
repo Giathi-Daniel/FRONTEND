@@ -9,7 +9,7 @@
 }
 
 :root {
-    --container-width-lg: 96%; 
+    --container-width-lg: 98%; 
     --container-width-md: 96%; 
     --container-width-sm: 90%; 
 
@@ -31,19 +31,25 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+section {
+    padding-block: 3rem;
+}
+
 /* ******************************** HEADER STYLING ***************************** */
 header {
     background: red;
     inline-size: 100%;
-    padding: .7rem 1rem;
+    padding-block: .7rem;
     color: var(--color-text);
     block-size: 5rem;
     border-block-end: 1px solid var(--color-text);
     z-index: 99;
+    position: fixed;
 }
 
 .container {
-    inline-size: var(--container-width-lg);   
+    inline-size: var(--container-width-lg);  
+    margin-inline: auto; 
 }
 
 .header__container {
@@ -53,6 +59,35 @@ header {
     overflow: hidden;
 }
 
-.header_top, .header_bottom {
+.header__container span {
+    background: var(--color-text);
+    inline-size: 100%;
+    block-size: .1px;
+    position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 2.5rem;
+}
+
+.header__top, .header__bottom {
     align-items: center;
 }
+
+
+/* ******************************** FOOTER STYLING ***************************** */
+footer {
+    inline-size: 100%;
+    background: yellow;
+    padding: 1.5rem 5rem;
+    border-block-start: .1rem solid var(--color-text);
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    inline-size: 100%;
+    flex-wrap: wrap;
+}
+
