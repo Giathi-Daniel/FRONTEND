@@ -10,8 +10,8 @@
 
 :root {
     --container-width-lg: 98%;
-    --container-width-md: 96%;
-    --container-width-sm: 90%;
+    /* --container-width-md: 96%; */
+    --container-width-sm: 96%;
 
     --color-primary: #0f0f0f;
     --color-text: #f1f1f1;
@@ -143,6 +143,7 @@ header {
 
 .header__utils ion-icon {
     cursor: pointer;
+    font-size: 1.3rem;
 }
 
 .header__bottom {
@@ -170,7 +171,7 @@ header {
 
 /* ******************** SEARCH CONTAINER ******************** */
 .search__container {
-    /* display: none; */
+    display: none;
     position: fixed;
     inset-block-start: 0;
     inset-inline-start: 0;
@@ -343,6 +344,10 @@ footer.sticky {
     inset-block-end: 0;
 }
 
+footer a ion-icon {
+    font-size: 1.3rem;
+}
+
 .footer__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -369,7 +374,7 @@ footer.sticky {
     }
 
     .header__utils ion-icon {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .header__utils div {
