@@ -31,6 +31,23 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+a {
+    inline-size: fit-content;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    background: #292828;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    gap: .6rem;
+}
+
+a:hover {
+    background: var(--color-text-fade);
+}
+
 section {
     padding-block: 3rem;
 }
@@ -77,17 +94,35 @@ header {
 /* ******************************** FOOTER STYLING ***************************** */
 footer {
     inline-size: 100%;
-    background: yellow;
-    padding: 1.5rem 5rem;
-    border-block-start: .1rem solid var(--color-text);
+    padding: 1.5rem 2rem;
+    z-index: 99999999;
+    box-shadow: 0 0 1rem rgba(30, 27, 27, 0.1);
+    position: fixed;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    background: var(--color-primary);
+}
+
+footer.sticky {
+    transform: translateY(0);
+    inset-block-end: 0;
 }
 
 .footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 2rem;
     font-size: 1.4rem;
     inline-size: 100%;
     flex-wrap: wrap;
+}
+
+/* ******************************** MEDIA QUERIES ***************************** */
+/* ******************** MOBILE ******************** */
+@media screen and (max-width: 600px) {
+    a {
+        inline-size: 100%;
+    }
 }
 
