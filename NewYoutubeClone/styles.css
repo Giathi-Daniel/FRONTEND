@@ -270,6 +270,9 @@ footer.sticky {
 /* ******************************** MEDIA QUERIES ***************************** */
 /* ******************** MOBILE ******************** */
 @media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     .container {
         inline-size: var(--container-width-sm);
     }
