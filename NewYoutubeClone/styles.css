@@ -388,12 +388,6 @@ footer a ion-icon {
         font-size: 1rem;
     }
 
-    .header__utils div {
-        inline-size: fit-content;
-        block-size: auto;
-        padding: .4rem .8rem;
-    }
-
     .header__container span {
         inset-block-start: 3.7rem;
     }
