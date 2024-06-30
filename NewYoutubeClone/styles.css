@@ -98,7 +98,7 @@ header {
     position: absolute;
     inset-inline-start: 0;
     inset-inline-end: 0;
-    inset-block-start: 3rem;
+    inset-block-start: 3.5rem;
 }
 
 .header__top,
@@ -131,19 +131,29 @@ header {
     align-items: center;
 }
 
-.header__utils div {
-    background: green;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    inline-size: 2.5%;
-    block-size: 1.5rem;
-}
-
 .header__utils ion-icon {
     cursor: pointer;
     font-size: 1.3rem;
+}
+
+.header__utils div,
+#mic {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: .4rem;
+}
+
+.header__utils div {
+    background: green;
+    inline-size: 37px;
+    block-size: 37px;
+}
+
+#mic {
+    background: var(--color-text-fade);
 }
 
 .header__bottom {
