@@ -172,12 +172,12 @@ header {
 .search__container {
     /* display: none; */
     position: fixed;
-    inset-block-start: 1rem;
+    inset-block-start: 0;
     inset-inline-start: 0;
     inline-size: 100%;
     block-size: 100%;
     background: rgba(122, 118, 118, 0.8);
-    z-index: 999999;
+    z-index: 99999999999999;
     flex-direction: column;
 }
 
@@ -330,7 +330,7 @@ header {
 footer {
     inline-size: 100%;
     padding: 1.5rem 2rem;
-    z-index: 99999999;
+    z-index: 9999;
     box-shadow: 0 0 1rem rgba(30, 27, 27, 0.1);
     position: fixed;
     transform: translateY(100%);
@@ -380,5 +380,9 @@ footer.sticky {
 
     .header__container span {
         inset-block-start: 3.7rem;
+    }
+
+    .search__container {
+        inline-size: 100vw;
     }
 }

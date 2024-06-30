@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchContainer = document.getElementById("search-container");
     const searchInput = document.getElementById("search-input");
     const headerContainer = document.querySelector(".header__container");
+    const footer = document.getElementById('footer')
   
+    // footer.style.display = "none"
+
     searchIcon.addEventListener("click", function() {
       searchContainer.style.display = "flex";
       headerContainer.style.display = "none";
@@ -19,18 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
   
     searchInput.addEventListener("keydown", function(event) {
       if (event.key === "Enter" && searchInput.value.trim() !== "") {
-        // Handle search functionality here if needed
         searchContainer.style.display = "none";
         headerContainer.style.display = "flex";
       }
     });
   
-    const searchHistoryCloseIcons = document.querySelectorAll(".search__history ion-icon");
-    searchHistoryCloseIcons.forEach(icon => {
-      icon.addEventListener("click", function() {
-        this.parentElement.style.display = "none";
-      });
+    document.addEventListener("click", function(event) {
+      if (event.target && event.target.matches(".search__history ion-icon")) {
+        const listItem = event.target.closest("li");
+        listItem.remove();
+        updateSearchHistory();
+      }
     });
+  
+    function updateSearchHistory() {
+      const searchHistoryList = document.querySelector(".search__history ul");
+      const listItems = searchHistoryList.querySelectorAll("li");
+      if (listItems.length === 0) {
+        searchHistoryList.innerHTML = "<li>No search history</li>";
+      }
+    }
   });
   
 
