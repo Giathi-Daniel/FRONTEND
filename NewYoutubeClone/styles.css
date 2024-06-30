@@ -128,6 +128,7 @@ header {
     margin-inline-start: auto;
     justify-content: end;
     gap: 1rem;
+    display: flex;
     align-items: center;
 }
 
