@@ -1,6 +1,6 @@
 /* ******************************** GENERAL STYLING ***************************** */
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -9,9 +9,9 @@
 }
 
 :root {
-    --container-width-lg: 98%; 
-    --container-width-md: 96%; 
-    --container-width-sm: 90%; 
+    --container-width-lg: 98%;
+    --container-width-md: 96%;
+    --container-width-sm: 90%;
 
     --color-primary: #0f0f0f;
     --color-text: #f1f1f1;
@@ -44,6 +44,15 @@ a {
     gap: .6rem;
 }
 
+button {
+    background: var(--color-text);
+    border-radius: .5rem;
+    padding: .1rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    block-size: auto;
+}
+
 a:hover {
     background: var(--color-text-fade);
 }
@@ -54,26 +63,26 @@ section {
 
 /* ******************************** HEADER STYLING ***************************** */
 header {
-    background: red;
+    background: var(--color-primary);
     inline-size: 100%;
     padding-block: .7rem;
     color: var(--color-text);
-    block-size: 5rem;
-    border-block-end: 1px solid var(--color-text);
+    block-size: 8rem;
+    border-block-end: .1px solid var(--color-text);
     z-index: 99;
     position: fixed;
 }
 
 .container {
-    inline-size: var(--container-width-lg);  
-    margin-inline: auto; 
+    inline-size: var(--container-width-lg);
+    margin-inline: auto;
 }
 
 .header__container {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header__container span {
@@ -83,12 +92,75 @@ header {
     position: absolute;
     inset-inline-start: 0;
     inset-inline-end: 0;
-    inset-block-start: 2.5rem;
+    inset-block-start: 3rem;
 }
 
-.header__top, .header__bottom {
+.header__top,
+.header__bottom {
     align-items: center;
 }
+
+.header__top,
+.header__utils {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 100%;
+}
+
+.header__title {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header__title ion-icon {
+    color: red;
+}
+
+.header__utils {
+    margin-inline-start: auto;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header__utils div {
+    background: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 2.5%;
+    block-size: 1.5rem;
+}
+
+.header__utils ion-icon {
+    cursor: pointer;
+}
+
+.header__bottom {
+    margin-block-start: .4rem;
+}
+
+.header__bottom ion-icon {
+    font-size: 3rem;
+}
+
+.header__history {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: .5rem 0;
+    box-sizing: border-box;
+}
+
+.header__history::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 /* ******************************** FOOTER STYLING ***************************** */
@@ -121,8 +193,25 @@ footer.sticky {
 /* ******************************** MEDIA QUERIES ***************************** */
 /* ******************** MOBILE ******************** */
 @media screen and (max-width: 600px) {
+    .container {
+        inline-size: var(--container-width-sm);
+    }
+
     a {
         inline-size: 100%;
     }
-}
 
+    .header__utils ion-icon {
+        font-size: 1.5rem;
+    }
+
+    .header__utils div {
+        inline-size: fit-content;
+        block-size: auto;
+        padding: .4rem .8rem;
+    }
+
+    .header__container span {
+        inset-block-start: 3.7rem;
+    }
+}
